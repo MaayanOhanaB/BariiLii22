@@ -1,0 +1,180 @@
+﻿
+<h1>@ViewData["Title"]</h1>
+
+@{
+    ViewData["Title"] = "בריא-לי";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4 mb-5">בריא-לי</h1>
+
+    @* add two cards below *@
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#secondId" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#firstId" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-5 p-5 jumbotron" id="firstId">
+        <div class="container">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget hendrerit tellus, eget condimentum leo. Pellentesque eu mauris at quam semper aliquam at nec lectus. Etiam arcu nunc, pretium eget orci in, molestie hendrerit ipsum. Nam mollis blandit ante. Vestibulum et nunc tempor, posuere augue a, efficitur tortor. Maecenas lacus velit, commodo congue est quis, euismod finibus tellus. Nulla dui lorem, dictum quis ante eget, tincidunt luctus orci.
+
+                Sed ac varius eros. Ut arcu augue, ullamcorper sit amet hendrerit ut, viverra eu nulla. Vivamus vel fringilla augue. Etiam porttitor sem sit amet lacinia efficitur. Pellentesque fringilla dictum velit, id iaculis arcu accumsan a. Duis blandit fermentum consequat. Suspendisse lacinia congue enim, quis fermentum quam auctor et. Etiam id purus a tortor imperdiet fermentum. Nam convallis mi ex.
+
+                Nam dapibus non dui tincidunt porttitor. Sed eget blandit mauris, in lacinia massa. Sed in fermentum sapien. Ut molestie scelerisque massa, finibus elementum enim venenatis sed. Cras id volutpat ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut id condimentum orci, sed commodo lectus. Sed posuere urna risus, a condimentum ex laoreet mattis. Praesent sit amet porttitor orci, eu porttitor dolor. Aenean faucibus dolor eu massa bibendum elementum. Nam eu tempus ipsum, vel maximus felis. Morbi id neque justo. Ut interdum, ipsum a commodo mollis, orci nunc viverra nulla, quis dapibus enim massa id turpis.
+
+                Donec tincidunt elementum ipsum at porttitor. Pellentesque nec lobortis mauris. Nullam tincidunt ante elit, eu feugiat felis condimentum vitae. Sed eros erat, ultricies pulvinar velit id, luctus efficitur purus. Maecenas mollis, felis non egestas feugiat, felis erat mollis est, a ornare leo mi quis purus. Ut a nunc a erat volutpat elementum. Ut nisl ligula, vestibulum et blandit sed, vehicula quis ante. Vivamus iaculis porttitor placerat. Etiam malesuada porttitor lectus, nec consequat mi condimentum at. Mauris consectetur purus id ultrices venenatis. Maecenas euismod lectus ipsum, eget convallis velit sollicitudin at. In sit amet consequat dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla convallis interdum quam, vel sagittis orci feugiat sed.
+
+                Nunc dignissim turpis id consequat dapibus. Phasellus vel sapien semper, feugiat dolor nec, tincidunt ipsum. Cras pellentesque faucibus magna sed fringilla. Aliquam vitae suscipit orci. Duis eget congue erat. Etiam dignissim magna nulla. Curabitur congue leo ante, et feugiat diam varius at. Donec tincidunt, nisi quis pellentesque eleifend, tellus tellus vehicula justo, eget porta lacus sapien nec nulla. Donec neque tortor, vestibulum ultrices purus vitae, consequat hendrerit nisl. In auctor, ante quis scelerisque eleifend, neque erat eleifend felis, nec egestas lectus enim ultrices tortor. Mauris elementum nunc vel elit facilisis rhoncus. Maecenas quis aliquet diam. Nullam id mollis augue, et cursus urna. Ut a ante porta, consectetur nulla sed, ultrices metus. Nunc in velit dapibus, suscipit dui sit amet, placerat odio. Cras sollicitudin sem et velit congue facilisis.
+            </p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">זימון תורים</h5>
+                        <p class="card-text">קביעת תור</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">קורונה</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Corona">לחץ כאן</a>
+                    </div>
+                </div>
+                @*each one of this its a card*@
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="Card title">צוות רפואי</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://localhost:44330/Home/MedicalTeamGeneric" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="m-5 p-5 jumbotron" id="secondId">
+        <div class="container">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget hendrerit tellus, eget condimentum leo. Pellentesque eu mauris at quam semper aliquam at nec lectus. Etiam arcu nunc, pretium eget orci in, molestie hendrerit ipsum. Nam mollis blandit ante. Vestibulum et nunc tempor, posuere augue a, efficitur tortor. Maecenas lacus velit, commodo congue est quis, euismod finibus tellus. Nulla dui lorem, dictum quis ante eget, tincidunt luctus orci.
+
+                Sed ac varius eros. Ut arcu augue, ullamcorper sit amet hendrerit ut, viverra eu nulla. Vivamus vel fringilla augue. Etiam porttitor sem sit amet lacinia efficitur. Pellentesque fringilla dictum velit, id iaculis arcu accumsan a. Duis blandit fermentum consequat. Suspendisse lacinia congue enim, quis fermentum quam auctor et. Etiam id purus a tortor imperdiet fermentum. Nam convallis mi ex.
+
+                Nam dapibus non dui tincidunt porttitor. Sed eget blandit mauris, in lacinia massa. Sed in fermentum sapien. Ut molestie scelerisque massa, finibus elementum enim venenatis sed. Cras id volutpat ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut id condimentum orci, sed commodo lectus. Sed posuere urna risus, a condimentum ex laoreet mattis. Praesent sit amet porttitor orci, eu porttitor dolor. Aenean faucibus dolor eu massa bibendum elementum. Nam eu tempus ipsum, vel maximus felis. Morbi id neque justo. Ut interdum, ipsum a commodo mollis, orci nunc viverra nulla, quis dapibus enim massa id turpis.
+
+                Donec tincidunt elementum ipsum at porttitor. Pellentesque nec lobortis mauris. Nullam tincidunt ante elit, eu feugiat felis condimentum vitae. Sed eros erat, ultricies pulvinar velit id, luctus efficitur purus. Maecenas mollis, felis non egestas feugiat, felis erat mollis est, a ornare leo mi quis purus. Ut a nunc a erat volutpat elementum. Ut nisl ligula, vestibulum et blandit sed, vehicula quis ante. Vivamus iaculis porttitor placerat. Etiam malesuada porttitor lectus, nec consequat mi condimentum at. Mauris consectetur purus id ultrices venenatis. Maecenas euismod lectus ipsum, eget convallis velit sollicitudin at. In sit amet consequat dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla convallis interdum quam, vel sagittis orci feugiat sed.
+
+                Nunc dignissim turpis id consequat dapibus. Phasellus vel sapien semper, feugiat dolor nec, tincidunt ipsum. Cras pellentesque faucibus magna sed fringilla. Aliquam vitae suscipit orci. Duis eget congue erat. Etiam dignissim magna nulla. Curabitur congue leo ante, et feugiat diam varius at. Donec tincidunt, nisi quis pellentesque eleifend, tellus tellus vehicula justo, eget porta lacus sapien nec nulla. Donec neque tortor, vestibulum ultrices purus vitae, consequat hendrerit nisl. In auctor, ante quis scelerisque eleifend, neque erat eleifend felis, nec egestas lectus enim ultrices tortor. Mauris elementum nunc vel elit facilisis rhoncus. Maecenas quis aliquet diam. Nullam id mollis augue, et cursus urna. Ut a ante porta, consectetur nulla sed, ultrices metus. Nunc in velit dapibus, suscipit dui sit amet, placerat odio. Cras sollicitudin sem et velit congue facilisis.
+            </p>
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">זימון תורים</h5>
+                        <p class="card-text">קביעת תור<br />קביעת פגישת ייעוץ</p>
+                    </div>
+
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">ניתוחים פלסטיים</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                @*each one of this its a card*@
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">צוות רפואי</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">ניתוחים פלסטיים</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="PlasticSurgery">111</a>
+
+    </div>
+</div>
+@*each one of this its a card*@
+<div class="card">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">אודות</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    </div>
+</div>
+
+<footer class="mt-5 text-center">
+    <label for="Phone Number">מספר111 טלפון: 03-9793523</label>
+    <br>
+    <label for="Fax">מספר פקס: 03-9793522</label>
+    <br>
+    <label for="Mail"> Info@BariLi.co.il :אימייל</label>
+    <br>
+    <label for="Address">כתובת: הבריאים 32, רמת החייל, תל אביב</label>
+    <br>
+
+</footer>
+
+
+
+

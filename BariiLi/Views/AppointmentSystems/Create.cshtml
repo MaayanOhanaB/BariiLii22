@@ -1,0 +1,48 @@
+﻿@*@model BariiLi.Models.AppointmentSystems
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>AppointmentSystems</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="typeOfPain" class="control-label"></label>
+                <input asp-for="typeOfPain" class="form-control" />
+                <span asp-validation-for="typeOfPain" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MTId" class="control-label"></label>
+                <input asp-for="MTId" class="form-control" />
+                <span asp-validation-for="MTId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="patientId" class="control-label"></label>
+                <input asp-for="patientId" class="form-control" />
+                <span asp-validation-for="patientId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="availabilityQueues" class="control-label"></label>
+                <input asp-for="availabilityQueues" class="form-control" />
+                <span asp-validation-for="availabilityQueues" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}*@

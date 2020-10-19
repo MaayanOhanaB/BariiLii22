@@ -1,0 +1,182 @@
+﻿<h1>@ViewData["Title"]</h1>
+
+@{
+    ViewData["Title"] = "צוות רפואי";
+}
+
+
+<link rel="stylesheet" type="text/css" href="site.css" />
+
+<div class="text-center">
+    <h1 class="display-4 mb-5"><b>צוות רפואי</b></h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card" style="text-align:center">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center"><b>מחלקת גסטרו</b></h5>
+                <a href="#Gastro" class="btn btn-primary"><b>לצוות הרפואי</b></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card" style="text-align:center">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center"><b>מחלקת אורתופדיה</b></h5>
+                <a href="#Orthopedics" class="btn btn-primary"><b>לצוות הרפואי</b></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card" style="text-align:center">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center"><b>מחלקת שיניים</b></h5>
+                <a href="#Teeth" class="btn btn-primary"><b>לצוות הרפואי</b></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card" style="text-align:center">
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center"><b>מחלקה כללית</b></h5>
+                <a href="#Generic" class="btn btn-primary"><b>לצוות הרפואי</b></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Gastro Depratment *@
+<div id="Gastro" style="text-align:center">
+    <h4><br /><b>מחלקת גסטרו</b></h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר אלון משה</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Alon Moshe" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופא גסטרו<br><b>ניסיון תעסוקתי: </b> 15 שנים<br /><b>מקומות עבודה</b><br />אסותא תל אביב, תל אביב<br />אסותא אשדוד, אשדוד<br />אסף הרופא, ראשון לציון<br />תל השומר, רמת גן</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר גיל לחמי</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Gil Lahmy" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופא גסטרו<br><b>ניסיון תעסוקתי: </b> 7 שנים<br /><b>מקומות עבודה</b><br />אסותא אשדוד, אשדוד<br />בלינסון, פתח תקווה</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Orthopedics Depratment *@
+<div id="Orthopedics" style="text-align:center">
+    <h4><br /><b>מחלקת אורתופדיה</b></h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר שני כהן</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Shani Cohen" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופאת אורתופדית<br><b>ניסיון תעסוקתי: </b> 12 שנים<br /><b>מקומות עבודה</b><br />קפלן, רחובות<br />אסותא אשדוד, אשדוד<br />אסף הרופא, ראשון לציון<br />הדסה עין כרם, ירושלים</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר שקד רואי</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Shaked Roee" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופא אורתופדי<br><b>ניסיון תעסוקתי: </b> 5 שנים<br /><b>מקומות עבודה</b><br />בלינסון, פתח תקווה</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Teeth Depratment *@
+<div id="Teeth" style="text-align:center">
+    <h4><br /><b>מחלקת שיניים</b></h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר אריק בורנשטיין</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Arik Borenstein" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופאת שיניים<br><b>ניסיון תעסוקתי: </b> 24 שנים<br /><b>מקומות עבודה</b><br />קפלן, רחובות<br />אסותא אשדוד, אשדוד<br />מרפאה פרטית, נהריה</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר דני גלמור</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Dani Galmor" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופא שיניים<br><b>ניסיון תעסוקתי: </b> 16 שנים<br /><b>מקומות עבודה</b><br />אסותא אשדוד, אשדוד<br />מרכז רפואי שיבא, רמת גן<br />מאיר, כפר סבא</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Generic Depratment *@
+<div id="Generic" style="text-align:center">
+    <h4><br /><b>מחלקה כללית</b></h4>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר מאיה שאול</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Maya Shaul" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופאת משפחה<br><b>ניסיון תעסוקתי: </b> 13 שנים<br /><b>מקומות עבודה</b><br /> מאיר, כפר סבא<br />אסותא אשדוד, אשדוד<br />הדס עין כרם, ירושלים</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card" style="text-align:center">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align:center"><b>ד"ר אלכס שרמן</b></h5>
+                    <div class="container">
+                        <img src="..." alt="Dr. Alex Sherman" class="image">
+                        <div class="overlay">
+                            <div class="text"><p><br><b>התמחות: </b> רופא משפחה<br><b>ניסיון תעסוקתי: </b> 10 שנים<br /><b>מקומות עבודה</b><br />מעייני הישועה, בני ברק<br />מרכז רפואי שיבא, רמת גן<br />מאיר, כפר סבא</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
