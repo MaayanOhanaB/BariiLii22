@@ -22,7 +22,7 @@ namespace BariiLi.Controllers
         // GET: MedicalTeams
         public async Task<IActionResult> Index()
         {
-            return View(await _context.MedicalTeam.ToListAsync());
+            return View(await _context.MedicalTeams.ToListAsync());
         }
 
         // GET: MedicalTeams/Details/5
@@ -33,7 +33,7 @@ namespace BariiLi.Controllers
                 return NotFound();
             }
 
-            var medicalTeam = await _context.MedicalTeam
+            var medicalTeam = await _context.MedicalTeams
                 .FirstOrDefaultAsync(m => m.MTId == id);
             if (medicalTeam == null)
             {
@@ -73,7 +73,7 @@ namespace BariiLi.Controllers
                 return NotFound();
             }
 
-            var medicalTeam = await _context.MedicalTeam.FindAsync(id);
+            var medicalTeam = await _context.MedicalTeams.FindAsync(id);
             if (medicalTeam == null)
             {
                 return NotFound();
@@ -124,7 +124,7 @@ namespace BariiLi.Controllers
                 return NotFound();
             }
 
-            var medicalTeam = await _context.MedicalTeam
+            var medicalTeam = await _context.MedicalTeams
                 .FirstOrDefaultAsync(m => m.MTId == id);
             if (medicalTeam == null)
             {
@@ -139,15 +139,15 @@ namespace BariiLi.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            var medicalTeam = await _context.MedicalTeam.FindAsync(id);
-            _context.MedicalTeam.Remove(medicalTeam);
+            var medicalTeam = await _context.MedicalTeams.FindAsync(id);
+            _context.MedicalTeams.Remove(medicalTeam);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MedicalTeamExists(string id)
         {
-            return _context.MedicalTeam.Any(e => e.MTId == id);
+            return _context.MedicalTeams.Any(e => e.MTId == id);
         }
     }
 }

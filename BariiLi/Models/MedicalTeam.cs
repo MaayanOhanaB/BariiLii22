@@ -9,6 +9,17 @@ namespace BariiLi.Models
 {
     public class MedicalTeam
     {
+        public MedicalTeam() {}
+        public MedicalTeam(string mTId, string fullName, string gender, string specialization, DateTime availability, string location, int previousExprience) 
+        {
+            this.MTId = mTId;
+            this.fullName = fullName;
+            this.gender = gender;
+            this.specialization = specialization;
+            this.availability = availability;
+            this.location = location;
+            this.previousExprience = previousExprience;
+        }
         //Avoiding automatic numbering
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [MinLengthAttribute(9)]
@@ -23,6 +34,8 @@ namespace BariiLi.Models
         [Display(Name = "Specialization")]
         public string specialization { get; set; }
         [Display(Name = "Availability")]
+        //Displays just the time
+        [DataType(DataType.Time)]
         public DateTime availability { get; set; }
         [Display(Name = "Location")]
         public string location { get; set; }

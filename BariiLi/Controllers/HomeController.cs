@@ -61,8 +61,6 @@ namespace BariiLi.Controllers
 
         public IActionResult MedicalTeamGeneric()
         {
-
-
             return View();
         }
     }

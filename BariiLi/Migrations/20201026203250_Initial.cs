@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BariiLi.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "MedicalTeam",
+                name: "MedicalTeams",
                 columns: table => new
                 {
                     MTId = table.Column<string>(maxLength: 9, nullable: false),
@@ -21,7 +21,7 @@ namespace BariiLi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MedicalTeam", x => x.MTId);
+                    table.PrimaryKey("PK_MedicalTeams", x => x.MTId);
                 });
 
             migrationBuilder.CreateTable(
@@ -54,9 +54,9 @@ namespace BariiLi.Migrations
                 {
                     table.PrimaryKey("PK_AppointmentSystems", x => x.typeOfPain);
                     table.ForeignKey(
-                        name: "FK_AppointmentSystems_MedicalTeam_medicalTeamMTId",
+                        name: "FK_AppointmentSystems_MedicalTeams_medicalTeamMTId",
                         column: x => x.medicalTeamMTId,
-                        principalTable: "MedicalTeam",
+                        principalTable: "MedicalTeams",
                         principalColumn: "MTId",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -84,7 +84,7 @@ namespace BariiLi.Migrations
                 name: "AppointmentSystems");
 
             migrationBuilder.DropTable(
-                name: "MedicalTeam");
+                name: "MedicalTeams");
 
             migrationBuilder.DropTable(
                 name: "Patients");

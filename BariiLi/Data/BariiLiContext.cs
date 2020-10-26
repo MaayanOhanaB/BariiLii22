@@ -15,7 +15,7 @@ namespace BariiLi.Data
 
         }
 
-        public DbSet<MedicalTeam> MedicalTeam { get; set; }
+        public DbSet<MedicalTeam> MedicalTeams { get; set; }
         public DbSet<Patients> Patients { get; set; }
         public DbSet<AppointmentSystems> AppointmentSystems { get; set; }
     }
